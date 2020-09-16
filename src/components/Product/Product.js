@@ -3,8 +3,24 @@ import React from "react";
 import "./Product.scss";
 import StarIcon from "@material-ui/icons/Star";
 import prodImg from "../../assets/products/tagr.jpg";
+import { useStateValue } from "../../StateProvider";
 
 function Product({ title, price, rating, image }) {
+  const [state, dispatch] = useStateValue();
+
+  const addToCart = () => {
+    //dispatch the product into datalayer
+    dispatch({
+      type: "ADD_TO_CART",
+      item: {
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+      },
+    });
+  };
+
   return (
     <div className="product">
       <div className="product__info">
@@ -23,7 +39,7 @@ function Product({ title, price, rating, image }) {
       </div>
 
       <img src={image} alt="prod" />
-      <button>Add to cart</button>
+      <button onClick={addToCart}>Add to cart</button>
     </div>
   );
 }
