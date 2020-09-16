@@ -1,0 +1,15 @@
+.checkout {
+  display: flex;
+  padding: 2rem;
+  background-color: white;
+
+  .checkout_left {
+    width: 70%;
+
+    h2 {
+      margin-right: 5rem;
+      padding-bottom: 5px;
+      border-bottom: 1px solid rgba(24, 24, 24, 0.205);
+    }
+  }
+}
