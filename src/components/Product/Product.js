@@ -2,11 +2,10 @@ import React from "react";
 
 import "./Product.scss";
 import StarIcon from "@material-ui/icons/Star";
-import prodImg from "../../assets/products/tagr.jpg";
 import { useStateValue } from "../../StateProvider";
 
 function Product({ title, price, rating, image }) {
-  const [state, dispatch] = useStateValue();
+  const [{ cart }, dispatch] = useStateValue();
 
   const addToCart = () => {
     //dispatch the product into datalayer
