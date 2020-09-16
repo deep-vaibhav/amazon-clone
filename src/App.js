@@ -5,18 +5,23 @@ import "./App.css";
 import Checkout from "./components/Checkout/Checkout";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
+import Login from "./components/Login/Login";
 
 function App() {
   return (
     //BEM
     <Router>
       <div className="app">
-        <Header />
         <Switch>
+          <Route exact path="/login">
+            <Login />
+          </Route>
           <Route exact path="/checkout">
+            <Header />
             <Checkout />
           </Route>
           <Route exact path="/">
+            <Header />
             <Home />
           </Route>
         </Switch>
