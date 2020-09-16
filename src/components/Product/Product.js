@@ -4,7 +4,7 @@ import "./Product.scss";
 import StarIcon from "@material-ui/icons/Star";
 import { useStateValue } from "../../StateProvider";
 
-function Product({ title, price, rating, image }) {
+function Product({ id, title, price, rating, image }) {
   const [{ cart }, dispatch] = useStateValue();
 
   const addToCart = () => {
