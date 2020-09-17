@@ -21,14 +21,14 @@ function Home() {
           <Product
             id="534715387"
             title="Think & Grow Rich: THE 21st CENTURY EDITION Paperback – 1 March 2020"
-            price={4.99}
+            price={199}
             image={prodImg1}
             rating={4}
           />
           <Product
             id="36145712302"
             title="Marshall Mid ANC 04092138 Active Noise Cancelling On-Ear Wireless Bluetooth Headphone (Black)"
-            price={19.99}
+            price={4699}
             image={prodImg2}
             rating={3}
           />
@@ -37,21 +37,21 @@ function Home() {
           <Product
             id="365296239"
             title="Microsoft Surface GO 2 STQ-00013 10.1-inch Laptop (Gold Processor 4425Y/8GB/128GB SSD/Windows 10 Home in S Mode/Intel UHD 615 Graphics), Platinum"
-            price={24.99}
+            price={65459}
             image={prodImg3}
             rating={3}
           />
           <Product
             id="62871532480"
             title="Echo Input Portable Smart Speaker Edition - Carry Echo anywhere in your home"
-            price={12.99}
+            price={3999}
             image={prodImg4}
             rating={4}
           />
           <Product
             id="76175124021"
             title="Rich Dad Poor Dad : What The Rich Teach Their Kids About Money That the Poor and Middle Class Do Not!"
-            price={3.99}
+            price={259}
             image={prodImg5}
             rating={5}
           />
@@ -60,7 +60,7 @@ function Home() {
           <Product
             id="986235285"
             title="Fire TV Stick 4K with All-New Alexa Voice Remote | Streaming Media Player"
-            price={6.99}
+            price={2499}
             image={prodImg6}
             rating={3}
           />

@@ -11,6 +11,7 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import { useStateValue } from "./StateProvider";
 import Payment from "./components/Payment/Payment";
+import Orders from "./components/Orders/Orders";
 
 const promise = loadStripe(
   "pk_test_51HSJBGHnUAXr0gumkQZ7qlgWsKIgorp2TEXlI2VgT5pJWMvmZAvC8b8qAHe0832HQ2yT2LdhJUXblzBYXGvUEhql00mphya1Tr"
@@ -44,6 +45,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route exact path="/orders">
+            <Header />
+            <Orders />
+          </Route>
           <Route exact path="/payment">
             <Header />
             <Elements stripe={promise}>
