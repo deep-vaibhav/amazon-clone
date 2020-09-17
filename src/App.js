@@ -8,6 +8,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import { useStateValue } from "./StateProvider";
+import Payment from "./components/Payment/Payment";
 
 function App() {
   const [{}, dispatch] = useStateValue();
@@ -37,6 +38,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route exact path="/payment">
+            <Header />
+            <Payment />
+          </Route>
           <Route exact path="/login">
             <Login />
           </Route>
